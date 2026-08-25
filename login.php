@@ -42,11 +42,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 exit();
 
             } else {
-                $error = "Invalid email or password";
+                $error = "Invalid Email or Password";
             }
 
         } else {
-            $error = "Invalid email or password";
+            $error = "Invalid Email or Password";
         }
     }
 }
