@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -7,16 +8,16 @@ body {
 
 h1, h2, h3 {
     text-align: center;
-    color: #54a7ec;
+    color: #2f6f5e;
 }
 
 a {
-    color: #337896;
+    color: #2f6f5e;
 }
 
 /* Banner used at the top of login/register pages */
 .page-header {
-    background-color: #338392;
+    background-color: #2f6f5e;
     padding: 20px;
     text-align: center;
 }
@@ -33,7 +34,7 @@ a {
 }
 
 .card {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border: 1px solid #cccccc;
     padding: 20px;
     margin-bottom: 20px;
@@ -47,7 +48,7 @@ a {
 /* Top navigation bar (used on dashboard pages) */
 .navbar {
     overflow: hidden;
-    background-color: #3aa9ac;
+    background-color: #2f6f5e;
     padding: 12px 20px;
 }
 
@@ -170,6 +171,89 @@ a {
 .status-rejected {
     color: red;
     font-weight: bold;
+}
+
+/* Landing page hero */
+.hero {
+    background-color: #2f6f5e;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    color: white;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Generic content section on the landing page */
+.section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Row that holds floated columns (same clearfix idea as .navbar) */
+.row {
+    overflow: hidden;
+}
+
+.col-3 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.col-4 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2f6f5e;
+    text-align: center;
+}
+
+.stat-label {
+    text-align: center;
+    color: #666666;
+}
+
+.cta-banner {
+    background-color: #eef7f4;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Guest top bar (used on index.php, before login) */
+.guest-navbar {
+    overflow: hidden;
+    padding: 15px 20px;
+    background-color: white;
+    border-bottom: 1px solid #cccccc;
+}
+
+.guest-navbar .brand {
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+    color: #2f6f5e;
+}
+
+.guest-navbar .guest-links {
+    float: right;
+}
+
+.guest-navbar .guest-links a {
+    margin-left: 15px;
 }
 
 /* Footer */
