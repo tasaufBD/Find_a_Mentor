@@ -15,6 +15,7 @@ a {
     color: #2f6f5e;
 }
 
+/* Banner used at the top of login/register pages */
 .page-header {
     background-color: #2f6f5e;
     padding: 20px;
@@ -44,7 +45,7 @@ a {
     margin: 0 auto;
 }
 
-/* Top navigation bar for dashboards*/
+/* Top navigation bar (used on dashboard pages) */
 .navbar {
     overflow: hidden;
     background-color: #2f6f5e;
@@ -148,7 +149,7 @@ a {
     text-align: left;
 }
 
-/* Status: verification and session status */
+/* Status text - verification status and session status */
 .status-verified,
 .status-accepted {
     color: green;
