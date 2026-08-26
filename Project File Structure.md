@@ -52,7 +52,7 @@ mentor\_requests.php			View pending session requests, Accept/Reject buttons
 
 
 
-view\_mentor.php?id=X		Full public profile of one mentor — used when a student clicks a search result
+view\_mentor.php?id=X		- Done.
 
 
 
@@ -64,7 +64,7 @@ admin\_dashboard.php		-Done, **Need Modification.**
 
 admin\_manage\_users.php		List/delete users (like their viewStudent.php + deleteStudent.php combined)
 
-admin\_verify\_mentors.php	List pending mentors, Verify/Reject buttons
+admin\_verify\_mentors.php	-Done.
 
 
 
