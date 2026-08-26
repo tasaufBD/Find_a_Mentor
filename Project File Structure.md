@@ -68,11 +68,9 @@ admin\_verify\_mentors.php	-Done.
 
 
 
-**AJAX endpoint**
+**AJAX endpoint			-Implement later.(next week)**
 
 
-
-File	Purpose
 
 ajax\_search\_mentors.php		Takes filter values, queries mentor\_profiles, returns an HTML fragment (table rows) that JS injects into student\_search\_mentors.php — no full page reload
 
