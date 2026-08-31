@@ -1,23 +1,23 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #222222;
     margin: 0;
 }
 
 h1, h2, h3 {
     text-align: center;
-    color: #2f6f5e;
+    color: #60a9e4;
 }
 
 a {
-    color: #2f6f5e;
+    color: #62bad7;
 }
 
 /* Banner used at the top of login/register pages */
 .page-header {
-    background-color: #2f6f5e;
+    background-color: #50cadf;
     padding: 20px;
     text-align: center;
 }
@@ -34,7 +34,7 @@ a {
 }
 
 .card {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: 1px solid #cccccc;
     padding: 10px;
     margin-bottom: 20px;
@@ -51,7 +51,7 @@ a {
 /* Top navigation bar (used on dashboard pages) */
 .navbar {
     overflow: hidden;
-    background-color: #2f6f5e;
+    background-color: #5f66ce;
     padding: 12px 20px;
 }
 
@@ -110,7 +110,7 @@ a {
 .btn {
     display: inline-block;
     padding: 8px 16px;
-    background-color: #2f6f5e;
+    background-color: #226ba7;
     color: white;
     border: none;
     text-decoration: none;
@@ -118,7 +118,7 @@ a {
 }
 
 .btn-secondary {
-    background-color: #888888;
+    background-color: #84f386;
 }
 
 .btn-danger {
@@ -202,7 +202,6 @@ a {
     margin: 0 auto;
 }
 
-/* Row that holds floated columns (same clearfix idea as .navbar) */
 .row {
     overflow: hidden;
 }
@@ -266,5 +265,5 @@ a {
 .site-footer {
     text-align: center;
     padding: 15px;
-    color: #666666;
+    color: #abe0ec;
 }

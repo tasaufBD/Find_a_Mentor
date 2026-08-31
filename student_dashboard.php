@@ -40,8 +40,11 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] !== "student") {
         <h3>Your Menu</h3>
         <ul>
             <li><a href="student_profile_view.php">View My Profile</a></li>
+            <br>
             <li><a href="student_profile_edit.php">Edit My Profile</a></li>
+            <br>
             <li><a href="student_search_mentors.php">Find a Mentor</a></li>
+            <br>
             <li><a href="student_my_requests.php">My Session Requests</a></li>
         </ul>
     </div>
