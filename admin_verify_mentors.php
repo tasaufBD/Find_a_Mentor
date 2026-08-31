@@ -66,57 +66,53 @@ $result = mysqli_query($conn, $sql);
 
 <div class="container">
 
-    <div class="card">
-        <h2>Verify Mentors</h2>
+    <h1 style="text-align: center; color: #2f6f5e; margin-bottom: 20px;">Verify Mentors</h1>
 
-        <?php if ($message != ""): ?>
-            <div class="alert-success"><?php echo htmlspecialchars($message); ?></div>
-        <?php endif; ?>
+    <?php if ($message != ""): ?>
+        <div class="alert-success" style="text-align: center;"><?php echo htmlspecialchars($message); ?></div>
+    <?php endif; ?>
 
-        <table class="table-basic">
+    <table class="table-basic" style="margin: 0 auto;">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>University</th>
+            <th>Department</th>
+            <th>Grad Year</th>
+            <th>Organization</th>
+            <th>Position</th>
+            <th>Goal Achieved</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+
+        <?php while ($row = mysqli_fetch_assoc($result)): ?>
             <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>University</th>
-                <th>Department</th>
-                <th>Grad Year</th>
-                <th>Organization</th>
-                <th>Position</th>
-                <th>Goal Achieved</th>
-                <th>Status</th>
-                <th>Action</th>
+                <td><?php echo htmlspecialchars($row["full_name"]); ?></td>
+                <td><?php echo htmlspecialchars($row["email"]); ?></td>
+                <td><?php echo htmlspecialchars($row["university"]); ?></td>
+                <td><?php echo htmlspecialchars($row["department"]); ?></td>
+                <td><?php echo htmlspecialchars($row["graduation_year"]); ?></td>
+                <td><?php echo htmlspecialchars($row["current_organization"]); ?></td>
+                <td><?php echo htmlspecialchars($row["current_position"]); ?></td>
+                <td><?php echo htmlspecialchars($row["goal_achieved"]); ?></td>
+                <td>
+                    <span class="status-<?php echo htmlspecialchars($row["verification_status"]); ?>">
+                        <?php echo htmlspecialchars(ucfirst($row["verification_status"])); ?>
+                    </span>
+                </td>
+                <td>
+                    <form method="post">
+                        <input type="hidden" name="user_id" value="<?php echo $row["user_id"]; ?>">
+                        <input type="submit" name="action" value="verify" class="btn">
+                        <input type="submit" name="action" value="reject" class="btn btn-danger">
+                    </form>
+                </td>
             </tr>
-
-            <?php while ($row = mysqli_fetch_assoc($result)): ?>
-                <tr>
-                    <td><?php echo htmlspecialchars($row["full_name"]); ?></td>
-                    <td><?php echo htmlspecialchars($row["email"]); ?></td>
-                    <td><?php echo htmlspecialchars($row["university"]); ?></td>
-                    <td><?php echo htmlspecialchars($row["department"]); ?></td>
-                    <td><?php echo htmlspecialchars($row["graduation_year"]); ?></td>
-                    <td><?php echo htmlspecialchars($row["current_organization"]); ?></td>
-                    <td><?php echo htmlspecialchars($row["current_position"]); ?></td>
-                    <td><?php echo htmlspecialchars($row["goal_achieved"]); ?></td>
-                    <td>
-                        <span class="status-<?php echo htmlspecialchars($row["verification_status"]); ?>">
-                            <?php echo htmlspecialchars(ucfirst($row["verification_status"])); ?>
-                        </span>
-                    </td>
-                    <td>
-                        <form method="post">
-                            <input type="hidden" name="user_id" value="<?php echo $row["user_id"]; ?>">
-                            <input type="submit" name="action" value="verify" class="btn">
-                            <input type="submit" name="action" value="reject" class="btn btn-danger">
-                        </form>
-                    </td>
-                </tr>
-            <?php endwhile; ?>
-
-        </table>
-    </div>
+        <?php endwhile; ?>
+    </table>
 
 </div>
-
 <p class="site-footer">Copyright &copy; <?php echo date("Y"); ?> PeerPath</p>
 
 </body>
