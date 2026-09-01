@@ -1,6 +1,5 @@
 <?php
-// Work on it.
-//Landing page after a student logs in. Links out to every student-facing feature page.
+
 
 session_start();
 
@@ -41,7 +40,7 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] !== "student") {
         <ul>
             <li><a href="student_profile_view.php">View My Profile</a></li>
             <li><a href="student_profile_edit.php">Edit My Profile</a></li>
-            <li><a href="student_search_mentors.php">Find a Mentor</a></li>
+            <li><a href="search_mentor.php">Find a Mentor</a></li>
             <li><a href="student_my_requests.php">My Session Requests</a></li>
         </ul>
     </div>
