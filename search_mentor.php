@@ -55,7 +55,7 @@ if(!isset($_SESSION["user_id"]))
 </p>
 
 <script>
-
+// AJAX Search
 var xhr = null;
 var debounceTimer = null;
 
