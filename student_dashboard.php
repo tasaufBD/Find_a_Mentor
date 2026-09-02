@@ -42,7 +42,7 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] !== "student") {
             <br>
             <li><a href="student_profile_edit.php">Edit My Profile</a></li>
             <br>
-            <li><a href="student_search_mentors.php">Find a Mentor</a></li>
+            <li><a href="search_mentor.php">Find a Mentor</a></li>
             <br>
             <li><a href="student_my_requests.php">My Session Requests</a></li>
         </ul>

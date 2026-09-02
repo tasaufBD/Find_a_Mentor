@@ -57,6 +57,15 @@ if(!isset($_SESSION["user_id"]))
 <script>
 
 var xhr = null;
+var debounceTimer = null;
+
+document.getElementById("search").addEventListener("input", function() {
+    clearTimeout(debounceTimer);
+
+    debounceTimer = setTimeout(function() {
+        searchMentor();
+    }, 400);
+});
 
 function searchMentor()
 {
