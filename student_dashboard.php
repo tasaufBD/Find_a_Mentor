@@ -1,6 +1,5 @@
 <?php
-// Work on it.
-//Landing page after a student logs in. Links out to every student-facing feature page.
+
 
 session_start();
 
