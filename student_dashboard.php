@@ -118,7 +118,7 @@ if (!$profileIncomplete) {
 
         <?php if ($profileIncomplete): ?>
 
-            <p>Complete your profile to get mentors matched to your background and goal.</p>
+            <p><i>Complete your profile to get mentors matched to your background and goal.</i></p>
             <a href="student_profile_edit.php" class="btn">Complete My Profile</a>
 
         <?php elseif (empty($suggestedMentors)): ?>

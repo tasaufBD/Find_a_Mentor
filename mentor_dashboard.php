@@ -1,9 +1,5 @@
 <?php
 
-// Work on it.
-// Landing page after a mentor logs in. Links out to every mentor-facing feature page.
-
-
 session_start();
 
 if (!isset($_SESSION["user_id"]) || $_SESSION["role"] !== "mentor") {
@@ -35,16 +31,34 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] !== "mentor") {
 
     <div class="card">
         <h2>Welcome, <?php echo htmlspecialchars($_SESSION["full_name"]); ?></h2>
-        <p>Use the menu below to manage your profile and respond to students reaching out to you.</p>
+        <p><b>Use the Menu below to manage your profile and respond to students reaching out to you.</b></p>
     </div>
 
     <div class="card">
         <h3>Your Menu</h3>
-        <ul>
-            <li><a href="mentor_profile_view.php">View My Profile</a></li>
-            <li><a href="mentor_profile_edit.php">Edit My Profile</a></li>
-            <li><a href="mentor_requests.php">Session Requests</a></li>
-        </ul>
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <h4>My Profile</h4>
+                    <p>View your saved details.</p>
+                    <a href="mentor_profile_view.php" class="btn">View Profile</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <h4>Edit Profile</h4>
+                    <p>Update your background and journey.</p>
+                    <a href="mentor_profile_edit.php" class="btn">Edit Profile</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <h4>Session Requests</h4>
+                    <p>Review and respond to students.</p>
+                    <a href="mentor_requests.php" class="btn">View Requests</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
